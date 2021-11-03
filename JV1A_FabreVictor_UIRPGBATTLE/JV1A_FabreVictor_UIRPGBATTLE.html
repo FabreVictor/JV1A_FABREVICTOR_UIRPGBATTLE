@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+  html, body {
+    height: 100%;
+    font-size: 1.5rem;
+  }
+
+ .background {
+    background-image: url("./ForetBackground.png");
+    background-color:#0076a6;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+  }
+
+ .jeux {
+    display:flex;
+    flex-direction:column;
+    place-content: start space-between;
+    width:100%;
+	}
+		
+ .haut{
+    display:flex;
+		flex-direction: row;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+  .mid{
+    display:flex;
+	flex-direction: row-reverse;
+	padding-left: 200px;
+	padding-right:200px;
+	place-content: start space-between;
+  }
+	.hero{
+    display:flex;
+	flex-direction:column;
+   }
+   	.bob{
+	background-image: url("./AAA.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	width:30%;
+    height:30%;
+
+
+   }
+   .rob{
+	background-image: url("./AAA.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	width:30%;
+    height:30%;
+
+   }
+   .tom{
+	background-image: url("./AAA.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	width:30%;
+    height:30%;
+
+   }
+   .roy{
+	background-image: url("./AAA.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	width:30%;
+    height:30%;
+	}
+
+ .ennemi{
+	display:flex;
+	flex-direction:column;
+	place-content: start space-around;
+	margin: 40px;
+    }
+
+   } 
+   .goblin1{
+	background-image: url("./goblin1.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	margin-left: 100px;
+	width:20%;
+    height:20%;
+	}
+   
+    .goblin2{
+	background-image: url("./goblin1.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	margin-left: 200px;
+	width:20%;
+    height:20%;
+	
+   } 
+   .goblin3{
+	background-image: url("./goblin1.png");
+	background-repeat: no-repeat, repeat;
+	background-size:contain;
+	margin-left: 100px;
+	width:20%;
+    height:20%;
+   }
+   
+   
+ .bas{
+    display:flex;
+	flex-direction: row;
+    padding-bottom: 20px;
+    padding-left: 20px;
+	place-content: center space-around;
+	}
+ .stat{
+		background-color:rgba(0, 0, 0, 0.40);
+    color:white;
+	border: 4px solid white;
+	border-radius:4px
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+	}
+ .action{
+    background-color:rgba(0, 0, 0, 0.40);
+		color:white;
+		border: 4px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+
+ .test{
+		background-color:rgba(0, 0, 0, 0.40);
+		color:white;
+    flex-grow: 0;
+    width: 400px;
+    height: 40px;
+		border: 4px solid white;
+    margin-left: 40px;
+    padding-left: 20px;
+	}
+ .subtest {
+    display: flex;
+    flex-direction: row;
+    place-content: start space-between;
+  }
+ .dialogue{
+		background-color:rgba(0, 0, 0, 0.40);
+		color:white;
+		border: 4px solid white;
+		align-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
+	}
+
+</style>
+<head>
+  <title>test inferface</title>
+  <meta charset="utf-8"/>
+  </head>
+<body class="background">
+ <div class="jeux">  
+	<div class="haut" >
+	<div class="action">
+			<p>Attaque<br/>Defense<br/>Sort<br/>Fuite</p>
+			
+		</div>
+		<div class="dialogue">
+			<p>Action en cours: choix action</p>
+		</div>
+	</div>
+	</div>
+ <div class="mid">
+    <div class="hero">
+		<div class="bob">
+		<p>bob<br/></p>
+		</div>
+		<div class="rob">
+		<p>rob<br/></p>
+		</div>
+		<div class="tom">
+		<p>tom<br/></p>
+		</div>
+		<div class="roy">
+		<p>roy<br/></p>
+		</div>
+	</div>
+	<div class="ennemi">
+		<div class="goblin1">
+		
+		</div>
+		<div class="goblin2">
+		
+		</div>
+		<div class="goblin3">
+		
+		</div>
+	</div>
+  
+  </div>
+ <div class="bas">
+		<div class="stat">
+			<table>
+				<tr><td>Bob</td></tr>
+				<tr><td>Hp104</td></tr>
+				<tr><td>Ma 63</td></tr>
+				
+			</table>
+		</div>
+		<div class="stat">
+			<table>
+				<tr><td>Rob</td></tr>
+				<tr><td>Hp104</td></tr>
+				<tr><td>Ma 63</td></tr>
+				
+			</table>
+		</div>
+		<div class="stat">
+			<table>
+				<tr><td>Tom</td></tr>
+				<tr><td>Hp104</td></tr>
+				<tr><td>Ma 63</td></tr>
+				
+			</table>
+		</div>
+		<div class="stat">
+			<table>
+				<tr><td>Ryy</td></tr>
+				<tr><td>Hp104</td></tr>
+				<tr><td>Ma 63</td></tr>
+				
+			</table>
+		</div>
+    </div>
+	
+ </div>
+ 
+</body>
+
+
+</html>
